@@ -1,0 +1,70 @@
+baseURL = 'https://monkfish-app-qlbcs.ondigitalocean.app/'
+languageCode = 'en-us'
+title = 'Freyground'
+
+theme = 'pimeja'
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/joeroe/risotto"
+
+[[params.socialLinks]]
+icon = "ai ai-orcid"
+title = "ORCID"
+url = "https://orcid.org/0000-0001-2345-6789"
+
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+
+[menu]
+
+[privacy]
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true

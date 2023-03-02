@@ -72,6 +72,13 @@
           version = "1.76.0";
           sha256 = "ZAUUYbTq7iqBHwj+REXIb+osh1sxxYOP9hPyOCEinFA=";
         }
+        # Build tooling
+        {
+          name = "vscode-bazel";
+          publisher = "BazelBuild";
+          version = "0.7.0";
+          sha256 = "fdadf830cb07cbbce61ab540b633162a6ba5c12fa58a9dc9d58ba090008c9b17";
+        }
       ];
     })
   ];

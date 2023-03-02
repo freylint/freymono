@@ -1,6 +1,7 @@
 # Build artifacts
 public/
 **/bazel-*
+**/result
 
 # IDE configurations
 .vs/

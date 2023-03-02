@@ -16,7 +16,6 @@
     ./packages/steam.nix
     ./packages/vscode.nix
     ./packages/bazel.nix
-    ./packages/hyprland.nix
 
     ./services/display.nix
     ./services/network.nix

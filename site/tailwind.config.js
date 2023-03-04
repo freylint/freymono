@@ -1,10 +1,16 @@
+const srcs = "./src/**/*.{js,ts,jsx,tsx,mdx}";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-      "./src/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-      extend: {},
+  purge: [srcs],
+  content: [
+    srcs,
+  ],
+  theme: {
+    fontFamily: {
+      sans: ['Helvetica Nueue']
     },
-    plugins: [],
-  }
+    extend: {},
+  },
+  plugins: [],
+}

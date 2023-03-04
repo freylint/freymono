@@ -1,3 +1,8 @@
+"use client"
+
+import Homepage from "./posts/homepage.mdx";
+import About from "./posts/about.mdx";
+import LcRedditPost from "./posts/lc_reddit_post.mdx";
 
 export default function Home() {
   return (
@@ -16,9 +21,10 @@ export default function Home() {
         <p className='m-3 md:hidden'>BURGER</p>
       </div>
 
-      <h1 className='text-3xl font-bold underline'>
-        Hello, World!
-      </h1>
+      <Homepage />
+      <About />
+      <LcRedditPost />
+
     </main>
   )
 }

@@ -1,8 +1,10 @@
 //! Helvitica inspired dark theme for tech blogs.
 
-export default PimejaTheme = {
+const PimejaTheme = {
   fontFamily: {
     sans: ['Helvetica Nueue']
   },
   extend: {},
 }
+
+module.exports = PimejaTheme;

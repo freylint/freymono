@@ -6,11 +6,6 @@ module.exports = {
   content: [
     srcs,
   ],
-  theme: {
-    fontFamily: {
-      sans: ['Helvetica Nueue']
-    },
-    extend: {},
-  },
+  theme: require('../pimeja/theme.js'),
   plugins: [],
 }

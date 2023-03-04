@@ -2,7 +2,7 @@
 
 const PimejaTheme = {
   fontFamily: {
-    sans: ['"Helvetica Nueue"'],
+    sans: ['"Helvetica Neue"'],
     serif: ['Edwin'],
     Mono: ['"Fira Code"']
   },

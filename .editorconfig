@@ -6,6 +6,10 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
+[*.json]
+index_style = space
+indent_size = 2
+
 [*.css]
 index_style = space
 indent_size = 2

@@ -6,7 +6,6 @@
   environment.systemPackages = with pkgs; [
     git
     (vscode-with-extensions.override {
-      vscode = vscodium;
       vscodeExtensions = with vscode-extensions; [
         bbenoist.nix
         ms-python.python

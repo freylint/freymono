@@ -3,6 +3,6 @@
   environment.systemPackages = with pkgs; [
     nodejs
     yarn
-    nodePackages_latest.pnpm
+    nodePackages.pnpm
   ];
 }

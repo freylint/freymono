@@ -16,6 +16,7 @@
     ./packages/steam.nix
     ./packages/vscode.nix
     ./packages/bazel.nix
+    ./packages/nodejs.nix
 
     ./services/display.nix
     ./services/network.nix

@@ -3,6 +3,7 @@ public/
 **/bazel-*
 **/result
 **/node_modules
+**/out
 
 # IDE configurations
 .vs/

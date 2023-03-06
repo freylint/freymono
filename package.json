@@ -1,0 +1,5 @@
+{
+  "name": "freymono",
+  "description": "Monorepository for the freyground website.",
+  "private": "true"
+}

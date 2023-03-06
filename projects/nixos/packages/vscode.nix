@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     git
     (vscode-with-extensions.override {
+      vscode = vscode.fhs;
       vscodeExtensions = with vscode-extensions; [
         bbenoist.nix
         ms-python.python

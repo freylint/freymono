@@ -1,0 +1,1 @@
+# FreyMono Workspace documentation.

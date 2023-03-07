@@ -1,3 +1,3 @@
 # freymono
-Personal monorepo. Exinsting projects are:
+Personal monorepo. Existing projects are:
 - Freyground (personal website)

@@ -41,6 +41,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install site deps
         run: pnpm install --filter site
+      - name: Build site
+        run: pnpm run --filter site build
+      - name: Export static site
+        run: pnpm run --filter site export
       - name: Deploy to Azure
         id: deploy
         uses: Azure/static-web-apps-deploy@v1

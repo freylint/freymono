@@ -28,6 +28,12 @@
           version = "1.2.30";
           sha256 = "f2Gn+W0QHN8jD5aCG+P93Y+JDr/vs2ldGL7uQwBK4lE=";
         }
+        {
+          name = "remote-containers";
+          publisher = "ms-vscode-remote";
+          version = "0.283.0";
+          sha256 = "LaZzDLfQHFaOnkvKzq0vmUvAi+Q6sJrJPlAhWX0fY40=";
+        }
         # Rust tooling
         {
           name = "rust-analyzer";

@@ -1,0 +1,8 @@
+{
+  "name": "fg-ripper-nextjs",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "exec": "python3 ripper.py"
+  }
+}

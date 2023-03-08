@@ -1,0 +1,16 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-python.python"
+      ]
+    }
+  },
+
+  "forwardPorts": [3000]
+}

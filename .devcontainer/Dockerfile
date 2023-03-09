@@ -1,19 +1,8 @@
-FROM ubuntu:20.04 as dev
-RUN sudo apt-get update && sudo apt-get install -y --no-recommends
-    git base-devel \
-    # Install Docker
-    apt-transport-https ca-certificates curl gnupg lsb-release && \
-    sudo mkdir -m 0755 -p /etc/apt/keyrings && \
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null && \
-    sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin && \
-    # Install NodeJS
-    curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh && \
-    sudo bash /tmp/nodesource_setup.sh && \
-    sudo apt-get install nodejs npm && \
-    # Install Pnpm
-    npm i -g -f pnpm
-    # Clean apt-cache
-    sudo apt-get clean
-    
+FROM node:19-slim as dev
+RUN  apt-get update -y && apt-get upgrade -y && \
+      apt-get install -y git apt-transport-https ca-certificates curl gnupg lsb-release && \
+      # Install Pnpm
+      npm i -g -f pnpm && \
+      # Clean apt-cache
+      apt-get clean
+

@@ -12,6 +12,8 @@ RUN sudo apt-get update && sudo apt-get install -y --no-recommends
     curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh && \
     sudo bash /tmp/nodesource_setup.sh && \
     sudo apt-get install nodejs npm && \
+    # Install Pnpm
+    npm i -g -f pnpm
     # Clean apt-cache
     sudo apt-get clean
     

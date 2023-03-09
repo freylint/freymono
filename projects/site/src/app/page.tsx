@@ -7,7 +7,7 @@ import Homepage from "./posts/homepage.mdx";
 import About from "./posts/about.mdx";
 import LcRedditPost from "./posts/lc_reddit_post.mdx";
 
-export default function Home() {
+export default function Home({ source }) {
   return (
     <main>
 
@@ -24,12 +24,15 @@ export default function Home() {
         <p className='m-3 md:hidden'>BURGER</p>
       </div>
 
-      <MDXProvider>
-        <Homepage />
-        <About />
-        <LcRedditPost />
-      </MDXProvider>
+      <MDXRemote {...source} components={components} />
 
     </main>
   )
+}
+
+export async function getStaticProps() {
+  // MDX text - can be from a local file, database, anywhere
+  const source = 'Some **mdx** text, with a component <Test />'
+  const mdxSource = await serialize(source)
+  return { props: { source: mdxSource } }
 }

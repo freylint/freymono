@@ -4,6 +4,7 @@ public/
 **/result
 **/node_modules
 **/out
+**/.pnpm-store
 
 # IDE configurations
 .vs/

@@ -8,6 +8,10 @@ RUN sudo apt-get update && sudo apt-get install -y --no-recommends
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
           $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null && \
     sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin && \
+    # Install NodeJS
+    curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh && \
+    sudo bash /tmp/nodesource_setup.sh && \
+    sudo apt-get install nodejs npm && \
     # Clean apt-cache
     sudo apt-get clean
     

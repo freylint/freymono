@@ -1,13 +1,18 @@
 {
   "build": {
-    "dockerfile": "./Dockerfile"
+    "dockerfile": "Dockerfile"
   },
-  "forwardPorts": [3000],
+  "forwardPorts": [
+    3000
+  ],
+  "postCreateCommand": "pnpm install",
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["streetsidesoftware.code-spell-checker"]
+      "extensions": [
+        "streetsidesoftware.code-spell-checker"
+      ]
     }
   }
 }

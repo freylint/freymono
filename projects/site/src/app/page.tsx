@@ -1,5 +1,7 @@
 "use client"
 
+import {MDXProvider} from '@mdx-js/react';
+
 import Homepage from "./posts/homepage.mdx";
 import About from "./posts/about.mdx";
 import LcRedditPost from "./posts/lc_reddit_post.mdx";
@@ -21,9 +23,11 @@ export default function Home() {
         <p className='m-3 md:hidden'>BURGER</p>
       </div>
 
-      <Homepage />
-      <About />
-      <LcRedditPost />
+      <MDXProvider>
+        <Homepage />
+        <About />
+        <LcRedditPost />
+      </MDXProvider>
 
     </main>
   )

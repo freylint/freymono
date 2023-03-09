@@ -1,12 +1,9 @@
-import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote } from 'next-mdx-remote'
-import { Path } from 'typescript'
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { Path } from 'typescript';
 import { readFileSync } from 'fs';
 
-async function compileMDX(path: Path) {
-  return serialize(
-    readFileSync(path, {encoding: "utf-8"})
-  );
+async function loadMDX(path: Path) {
+  return readFileSync(path, { encoding: "utf-8" });
 }
 
 export default async function Home() {
@@ -26,7 +23,7 @@ export default async function Home() {
         <p className='m-3 md:hidden'>BURGER</p>
       </div>
 
-      <MDXRemote {...await compileMDX("./src/app/posts/about.mdx" as Path)} />
+      <MDXRemote source={await loadMDX("./src/app/posts/about.mdx" as Path)} />
     </main>
   )
 }

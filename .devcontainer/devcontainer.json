@@ -1,5 +1,7 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+  "build": {
+    "file": "./Dockerfile"
+  },
   "forwardPorts": [3000],
   "customizations": {
     // Configure properties specific to VS Code.

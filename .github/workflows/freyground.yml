@@ -23,10 +23,10 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install -g pnpm
-          pnpm install
-          pnpm --filter site run build
-          pnpm --filter site run test
+          cd projects/site/
+          npm install
+          npm run build
+          npm run test
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'freyground'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_778D9BCFA2F8461E85B788B14396AECA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_769D5FABD80F4153BB4D39F089B3DDFA }}
           package: .

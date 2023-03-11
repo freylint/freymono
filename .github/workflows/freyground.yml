@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: next-app
-          path: projects/site/.next/standalone/
+          path: projects/site/.next/
 
   deploy:
     runs-on: ubuntu-latest

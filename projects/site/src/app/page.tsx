@@ -1,12 +1,23 @@
 import { Path } from 'typescript';
 import { readFileSync } from 'fs';
+import {compileMDX} from 'next-mdx-remote/rsc';
 
 
 async function loadMDX(path: Path) {
-  return readFileSync(path, { encoding: "utf-8" });
+  // TODO make async
+  var post = readFileSync(path, { encoding: "utf-8" });
+  return compileMDX({
+    source: post,
+    options: {
+      parseFrontmatter: true,
+    },
+    components: {
+    }
+  });
 }
 
 export default async function Home() {
+  const {content, frontmatter} = await loadMDX("data/posts/about.mdx" as Path);
   return (
     <main>
 
@@ -22,7 +33,7 @@ export default async function Home() {
         </div>
         <p className='m-3 md:hidden'>BURGER</p>
       </div>
-
+      {content}
     </main>
   )
 }

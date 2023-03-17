@@ -39,7 +39,7 @@
           name = "rust-analyzer";
           publisher = "rust-lang";
           version = "0.4.1416";
-          sha256 = "c6hRhXczpZwZV/49y373nZZh/5lonW5SdhRwxzFxPcU=";
+          sha256 = "sha256-wZryB8/2n6Yk7XIWbNjr4Mjqr4QL8VuiOQ7bOqVbahE=";
         }
         # JS tooling
         {

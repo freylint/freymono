@@ -14,9 +14,6 @@ function SplashPage() {
   return (
     // TODO fetch header height from the theme
     <section className='min-h-[calc(100vh-6vh)] flex flex-col'>
-      <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
-        Freyground
-      </h1>
       <p className='grow text-white bg-black'>FG</p>
       <h2 className="my-4 text-2xl text-center text-white w-full">
         Projects, Blog, and Interactive Resume.

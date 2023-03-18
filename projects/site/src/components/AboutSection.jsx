@@ -5,7 +5,7 @@ export default function AboutSection({ title, children }) {
       <h3>
         {title}
       </h3>
-      <p className="prose prose-lg text-white w-full">
+      <p className="prose prose-lg text-white w-full ml-4">
         {children}
       </p>
     </section>

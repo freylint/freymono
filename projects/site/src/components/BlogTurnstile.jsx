@@ -2,9 +2,9 @@
 /// latest blog posts.
 
 import BlogCard from "@/components/BlogCard";
-import { BlogMeta as PrimMeta } from "@/app/posts/about";
-import { BlogMeta as SecMeta } from "@/app/posts/about";
-import { BlogMeta as TerMeta } from "@/app/posts/about";
+import { BlogMeta as PrimMeta } from "@/app/page";
+import { BlogMeta as SecMeta } from "@/app/page";
+import { BlogMeta as TerMeta } from "@/app/page";
 
 export default function BlogTurnstile() {
   return (

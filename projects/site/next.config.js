@@ -1,11 +1,12 @@
 
 /** @type {import('next').NextConfig} */
-export default nextConfig = {
+const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   output: "standalone",
   reactStrictMode: true,
   experimental: {
     appDir: true,
   }
-}
+};
 
+module.exports = nextConfig;

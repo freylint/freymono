@@ -2,6 +2,12 @@
 
 import AboutSection from '@/components/AboutSection';
 import BlogTurnstile from '@/components/BlogTurnstile';
+import BlogPostMetadata from '@/model/BlogMeta';
+
+export const BlogMeta: BlogPostMetadata = {
+  title: 'About Page',
+  intro: "This is the about page of the freyground website.",
+} 
 
 export default function About() {
   return (

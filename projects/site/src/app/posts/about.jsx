@@ -1,13 +1,38 @@
+// About / Homepage for the freyground website.
+
 export default function About() {
   return (
-    <article className="prose">
-      This is a site that was created after five separate prototypes far too
-      complex to be maintained by a developer who can't seem to get themselves
-      to study web development for a long period. Welcome to my reject project,
-      my own personal Unix. The acceptance that I'll never want to maintain a
-      web of microservices for a page that contains the tech writing a person
-      who has spent over five years coding, with nothing resume worthy to take
-      from it.
-    </article>
+    <main className="w-full">
+      <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
+        Freyground
+      </h1>
+      <h2 className="my-4 text-2xl text-center text-white w-full">
+        Projects, Blog, and Interactive Resume.
+      </h2>
+      <AboutSection title={"Blog"}>
+        The <a>Blog</a> was created as way of getting my thoughts on technical topics
+        like webdev, 3D Printing and CAD, and my adventures in professionalism.
+        Sample some topics if that sounds interesting to you!
+      </AboutSection>
+      <AboutSection title={"Projects"}>
+        The <a>Projects</a> is a collection of projects that I have worked on.
+        Ranging from painting, coding, and programming.
+      </AboutSection>
+      <AboutSection title={"Interactive Resume"}>
+        The <a>Resume</a> was created to provide a more personal resume for recruiters and
+        other developers who want to quickly learn what I can do.
+      </AboutSection>
+    </main>
   );
+}
+
+function AboutSection({ title, children }) {
+  <>
+    <h3>
+      {title}
+    </h3>
+    <p className="prose prose-lg">
+      {children}
+    </p>
+  </>
 }

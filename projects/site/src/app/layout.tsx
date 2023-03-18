@@ -15,9 +15,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.min.css" />
       </head>
-      <body className='font-sans bg-slate-900 text-white'>
+      <body className='font-sans bg-slate-900 white-space:pre-line break-words'>
         <HeaderBar />
         {children}
       </body>

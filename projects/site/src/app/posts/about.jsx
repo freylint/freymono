@@ -1,7 +1,7 @@
 // About/Home page for the freyground website.
 
 import AboutSection from '@/components/AboutSection';
-
+import BlogTurnstile from '@/components/BlogTurnstile';
 
 export default function About() {
   return (
@@ -17,6 +17,7 @@ export default function About() {
         like webdev, 3D Printing and CAD, and my adventures in professionalism.
         Sample some topics if that sounds interesting to you!
       </AboutSection>
+      <BlogTurnstile />
       <AboutSection title={"Projects"}>
         The Projects section is a collection of projects that I have worked on.
         Ranging from painting, coding, and programming.

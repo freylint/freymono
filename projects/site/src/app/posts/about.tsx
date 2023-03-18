@@ -13,20 +13,19 @@ export const BlogMeta: BlogPostMetadata = {
 function SplashPage() {
   return (
     // TODO fetch header height from the theme
-    <section className='min-h-[calc(100vh-6vh)] flex flex-col'>
-      <p className='grow text-white bg-black'>FG</p>
+    <section className='min-h-[calc(100vh-6vh)] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-b-xl flex flex-col'>
+      <p className='grow text-white text-center text-9xl'>FG</p>
       <h2 className="my-4 text-2xl text-center text-white w-full">
         Projects, Blog, and Interactive Resume.
       </h2>
-      <h2 className="text-center text-white text-3xl">⌄</h2>
+      <h2 className="text-center text-white text-3xl mb-4">⌄</h2>
     </section>
   );
 }
 
-export default function About() {
+function AboutBlock() {
   return (
     <main className="w-full">
-      <SplashPage />
       <AboutSection title={"Blog"}>
         The Blog was created as way of getting my thoughts on technical topics
         like webdev, 3D Printing and CAD, and my adventures in professionalism.
@@ -42,5 +41,14 @@ export default function About() {
         other developers who want to quickly learn what I can do.
       </AboutSection>
     </main>
+  );
+}
+
+export default function About() {
+  return (
+    <>
+    <SplashPage />
+    <AboutBlock/>
+    </>
   );
 }

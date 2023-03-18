@@ -1,6 +1,9 @@
-// About / Homepage for the freyground website.
+// About/Home page for the freyground website.
 
-export default function About() {
+import AboutSection from '../components/AboutSection';
+
+
+export default async function About() {
   return (
     <main className="w-full">
       <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
@@ -10,29 +13,18 @@ export default function About() {
         Projects, Blog, and Interactive Resume.
       </h2>
       <AboutSection title={"Blog"}>
-        The <a>Blog</a> was created as way of getting my thoughts on technical topics
+        The Blog was created as way of getting my thoughts on technical topics
         like webdev, 3D Printing and CAD, and my adventures in professionalism.
         Sample some topics if that sounds interesting to you!
       </AboutSection>
       <AboutSection title={"Projects"}>
-        The <a>Projects</a> is a collection of projects that I have worked on.
+        The Projects section is a collection of projects that I have worked on.
         Ranging from painting, coding, and programming.
       </AboutSection>
       <AboutSection title={"Interactive Resume"}>
-        The <a>Resume</a> was created to provide a more personal resume for recruiters and
+        The Resume section was created to provide a more personal resume for recruiters and
         other developers who want to quickly learn what I can do.
       </AboutSection>
     </main>
   );
-}
-
-function AboutSection({ title, children }) {
-  <>
-    <h3>
-      {title}
-    </h3>
-    <p className="prose prose-lg">
-      {children}
-    </p>
-  </>
 }

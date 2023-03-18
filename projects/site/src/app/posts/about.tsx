@@ -13,7 +13,7 @@ export const BlogMeta: BlogPostMetadata = {
 function SplashPage() {
   return (
     // TODO fetch header height from the theme
-    <section className='min-h-[calc(100vh-6vh)] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-b-xl flex flex-col'>
+    <section className='min-h-[calc(100vh-6vh)] bg-gradient-to-br from-indigo-800 via-purple-800 to-pink-800 rounded-b-xl flex flex-col'>
       <p className='grow text-white text-center text-9xl'>FG</p>
       <h2 className="my-4 text-2xl text-center text-white w-full">
         Projects, Blog, and Interactive Resume.

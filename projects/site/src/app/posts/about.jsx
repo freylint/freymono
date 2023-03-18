@@ -3,7 +3,7 @@
 import AboutSection from '../components/AboutSection';
 
 
-export default async function About() {
+export default function About() {
   return (
     <main className="w-full">
       <h1 className="my-4 text-3xl font-bold text-center text-white w-full">

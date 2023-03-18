@@ -6,5 +6,7 @@ module.exports = {
     srcs,
   ],
   theme: require('../pimeja/theme.js'),
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

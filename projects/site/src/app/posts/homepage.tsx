@@ -1,0 +1,26 @@
+export default function() {
+    return (
+        <article className="prose md:prose-md lg:prose-xl">
+            Welcome to the Freyground! A personal site for my exploration into the world of
+            tech. Come back soon for more cool content!
+
+            ## Posts
+
+            - [About this Site]
+            - [A Life Changing Reddit Post?]()
+
+            ## Devlogs
+
+            - [Creating a Custom Hugo Theme: A Researcher's Approach]()
+
+            ## Upcoming
+
+            - Creating a custom hugo theme
+            - Begin contributing to industry approved open source projects
+
+            {/* TODO Add reading list */}
+
+            ---
+        </article>
+    )
+}

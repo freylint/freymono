@@ -3,6 +3,7 @@
 import AboutSection from '@/components/AboutSection';
 import BlogTurnstile from '@/components/BlogTurnstile';
 import BlogPostMetadata from '@/model/BlogMeta';
+import Image from 'next/image';
 
 export const BlogMeta: BlogPostMetadata = {
   title: 'About Page',
@@ -12,12 +13,15 @@ export const BlogMeta: BlogPostMetadata = {
 export default function About() {
   return (
     <main className="w-full">
-      <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
-        Freyground
-      </h1>
-      <h2 className="my-4 text-2xl text-center text-white w-full">
-        Projects, Blog, and Interactive Resume.
-      </h2>
+      <section className='min-h-screen'>
+        <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
+          Freyground
+        </h1>
+        <Image src={'vercel.svg'} className="min-h-max " width={'720'} height={'1280'} alt={'Placeholder Logo'} />
+        <h2 className="my-4 text-2xl text-center text-white w-full">
+          Projects, Blog, and Interactive Resume.
+        </h2>
+      </section>
       <AboutSection title={"Blog"}>
         The Blog was created as way of getting my thoughts on technical topics
         like webdev, 3D Printing and CAD, and my adventures in professionalism.

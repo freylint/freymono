@@ -8,21 +8,28 @@ import Image from 'next/image';
 export const BlogMeta: BlogPostMetadata = {
   title: 'About Page',
   intro: "This is the about page of the freyground website.",
-} 
+}
+
+function SplashPage() {
+  return (
+    // TODO fetch header height from the theme
+    <section className='min-h-[calc(100vh-6vh)] flex flex-col'>
+      <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
+        Freyground
+      </h1>
+      <p className='grow text-white bg-black'>FG</p>
+      <h2 className="my-4 text-2xl text-center text-white w-full">
+        Projects, Blog, and Interactive Resume.
+      </h2>
+      <h2 className="text-center text-white text-3xl">⌄</h2>
+    </section>
+  );
+}
 
 export default function About() {
   return (
     <main className="w-full">
-      <section className='min-h-screen'>
-        <h1 className="my-4 text-3xl font-bold text-center text-white w-full">
-          Freyground
-        </h1>
-        <Image src={'vercel.svg'} className="min-h-max " width={'720'} height={'1280'} alt={'Placeholder Logo'} />
-        <h2 className="my-4 text-2xl text-center text-white w-full">
-          Projects, Blog, and Interactive Resume.
-        </h2>
-        <h2 className="text-center text-white text-3xl">⌄</h2>
-      </section>
+      <SplashPage />
       <AboutSection title={"Blog"}>
         The Blog was created as way of getting my thoughts on technical topics
         like webdev, 3D Printing and CAD, and my adventures in professionalism.

@@ -10,6 +10,8 @@ export default function HeaderBar() {
         </nav>
         <div className='m-3 hidden md:flex flex-row'>
           <p>GHUB</p>
+          <p>LNKDIN</p>
+          <p>TWIT</p>
         </div>
         <p className='m-3 md:hidden'>BURGER</p>
       </div>

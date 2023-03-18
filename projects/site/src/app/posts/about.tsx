@@ -21,6 +21,7 @@ export default function About() {
         <h2 className="my-4 text-2xl text-center text-white w-full">
           Projects, Blog, and Interactive Resume.
         </h2>
+        <h2 className="text-center text-white text-3xl">⌄</h2>
       </section>
       <AboutSection title={"Blog"}>
         The Blog was created as way of getting my thoughts on technical topics

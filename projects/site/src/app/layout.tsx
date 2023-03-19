@@ -1,4 +1,4 @@
-import HeaderBar from "@/components/headerbar";
+import HeaderBar from "@/components/HeaderBar";
 import "tailwindcss/tailwind.css";
 
 export const metadata = {

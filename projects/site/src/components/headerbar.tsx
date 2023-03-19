@@ -5,22 +5,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function HeaderBar() {
   return (
-    <main>
-      <div className='bg-gray flex flex-row text-white'>
-        <FGBranding />
-        <nav className='flex-row hidden md:flex m-3 grow'>
-          <p>Home</p>
-          <p>Posts</p>
-          <p>Projects</p>
-        </nav>
-        <div className='m-3 hidden md:flex flex-row min-w-fit'>
-          <HeaderBarIcon icon={faGithub} />
-          <HeaderBarIcon icon={faLinkedin} />
-          <HeaderBarIcon icon={faTwitter} />
-        </div>
-        <p className='m-3 md:hidden'>BURGER</p>
+    <div className='bg-gray flex flex-row text-white'>
+      <FGBranding />
+      <nav className='flex-row hidden md:flex m-3 grow'>
+        <p>Home</p>
+        <p>Posts</p>
+        <p>Projects</p>
+      </nav>
+      <div className='m-3 hidden md:flex flex-row min-w-fit'>
+        <HeaderBarIcon icon={faGithub} />
+        <HeaderBarIcon icon={faLinkedin} />
+        <HeaderBarIcon icon={faTwitter} />
       </div>
-    </main>
+      <p className='m-3 md:hidden'>BURGER</p>
+    </div>
   )
 }
 

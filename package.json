@@ -1,5 +1,11 @@
 {
   "name": "freymono",
   "description": "Monorepository for the freyground website.",
-  "private": "true"
+  "private": "true",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
 }

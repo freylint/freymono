@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function HeaderBar() {
   return (
-    <div className='bg-gray flex flex-row text-white'>
+    <div className='bg-gray flex flex-row text-white h-hbar'>
       <FGBranding />
       <nav className='flex-row hidden md:flex m-3 grow'>
         <p>Home</p>

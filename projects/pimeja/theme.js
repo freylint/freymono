@@ -6,7 +6,11 @@ const PimejaTheme = {
     serif: ['Edwin'],
     Mono: ['"Fira Code"']
   },
-  extend: {},
+  extend: {
+    spacing: {
+      'hbar': '3rem',
+    }
+  },
 }
 
 module.exports = PimejaTheme;

@@ -28,11 +28,13 @@ function AboutBlock() {
   return (
     <main className="w-full">
       <AboutSection title={"Blog"}>
-        The Blog was created as way of getting my thoughts on technical topics
-        like webdev, 3D Printing and CAD, and my adventures in professionalism.
-        Sample some topics if that sounds interesting to you!
+        <p>
+          The Blog was created as way of getting my thoughts on technical topics
+          like webdev, 3D Printing and CAD, and my adventures in
+          professionalism. Sample some topics if that sounds interesting to you!
+        </p>
+        <BlogTurnstile />
       </AboutSection>
-      <BlogTurnstile />
       <AboutSection title={"Projects"}>
         The Projects section is a collection of projects that I have worked on.
         Ranging from painting, coding, and programming.

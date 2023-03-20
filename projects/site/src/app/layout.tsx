@@ -1,4 +1,5 @@
 import HeaderBar from "@/components/HeaderBar";
+import SplashPage from "@/components/splashpage";
 import "tailwindcss/tailwind.css";
 
 export const metadata = {
@@ -23,8 +24,9 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.min.css"
         />
       </head>
-      <body className="font-sans bg-slate-900 white-space:pre-line break-words">
+      <body className="font-sans break-words bg-slate-900 white-space:pre-line">
         <HeaderBar />
+        <SplashPage />
         {children}
       </body>
     </html>

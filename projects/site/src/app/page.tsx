@@ -1,9 +1,6 @@
 // About/Home page for the freyground website.
 
 import AboutSection from "@/components/aboutsection";
-import BillBoard from "@/components/billboard/billboard";
-import SplashPage from "@/components/splashpage";
-import Image from "next/image";
 
 function AboutBlock() {
   return (
@@ -30,7 +27,6 @@ function AboutBlock() {
 export default function About() {
   return (
     <>
-      <SplashPage />
       <AboutBlock />
     </>
   );

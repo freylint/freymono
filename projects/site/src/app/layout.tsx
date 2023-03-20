@@ -1,5 +1,5 @@
-import HeaderBar from "@/shared/headerbar";
-import SplashPage from "@/components/splashpage";
+import HeaderBar from "@/app/shared/headerbar";
+import SplashPage from "@/app/components/splashpage";
 import "tailwindcss/tailwind.css";
 
 export const metadata = {

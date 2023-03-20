@@ -1,6 +1,6 @@
 // About/Home page for the freyground website.
 
-import AboutSection from "@/components/aboutsection";
+import AboutSection from "./components/aboutsection";
 
 function AboutBlock() {
   return (

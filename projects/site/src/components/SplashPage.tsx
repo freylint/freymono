@@ -1,4 +1,7 @@
-import BillBoard from "../shared/billboard/billboard";
+import Billboard, {
+  BillBoardEntry,
+  BillBoardGroup,
+} from "../shared/billboard/billboard";
 
 export default function SplashPage() {
   const marketingBlurb = "RAPID, ROBUST, ACCESSIBLE, ATTENTIVE";

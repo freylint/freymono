@@ -1,4 +1,4 @@
-import Billboard, {
+import BillBoard, {
   BillBoardEntry,
   BillBoardGroup,
 } from "../shared/billboard/billboard";

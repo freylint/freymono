@@ -1,4 +1,4 @@
-import HeaderBar from "@/components/HeaderBar";
+import HeaderBar from "@/shared/headerbar";
 import SplashPage from "@/components/splashpage";
 import "tailwindcss/tailwind.css";
 

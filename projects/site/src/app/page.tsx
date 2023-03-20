@@ -1,15 +1,9 @@
 // About/Home page for the freyground website.
 
 import AboutSection from "@/components/AboutSection";
-import BlogTurnstile from "@/components/BlogTurnstile";
-import BlogPostMetadata from "@/model/BlogMeta";
+import BillBoard from "@/components/BIllBoard";
 import SplashPage from "@/components/SplashPage";
 import Image from "next/image";
-
-export const BlogMeta: BlogPostMetadata = {
-  title: "About Page",
-  intro: "This is the about page of the freyground website.",
-};
 
 function AboutBlock() {
   return (
@@ -20,7 +14,6 @@ function AboutBlock() {
           like webdev, 3D Printing and CAD, and my adventures in
           professionalism. Sample some topics if that sounds interesting to you!
         </p>
-        <BlogTurnstile />
       </AboutSection>
       <AboutSection title={"Projects"}>
         The Projects section is a collection of projects that I have worked on.

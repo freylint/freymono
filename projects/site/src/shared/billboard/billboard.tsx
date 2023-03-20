@@ -29,9 +29,10 @@ function renderGroup(group: BillBoardGroup) {
 
 function renderEntry(entry: BillBoardEntry) {
   return (
-    <>
+    <div className="flex flex-col">
       <p>{entry.title}</p>
+      <p className="grow">image placeholder</p>
       <p>{entry.blurb}</p>
-    </>
+    </div>
   );
 }

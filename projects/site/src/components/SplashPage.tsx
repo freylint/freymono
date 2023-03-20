@@ -1,4 +1,4 @@
-import BillBoard from "./BIllBoard";
+import BillBoard from "./billboard/BIllBoard";
 
 export default function SplashPage() {
   const marketingBlurb = "RAPID, ROBUST, ACCESSIBLE, ATTENTIVE";

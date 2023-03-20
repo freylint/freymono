@@ -1,7 +1,7 @@
 // About/Home page for the freyground website.
 
 import AboutSection from "@/components/AboutSection";
-import BillBoard from "@/components/BIllBoard";
+import BillBoard from "@/components/billboard/BIllBoard";
 import SplashPage from "@/components/SplashPage";
 import Image from "next/image";
 

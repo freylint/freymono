@@ -18,6 +18,20 @@ export default function BillBoard(props: BillBoardProps) {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full bg-black">
       <p>Billboard</p>
+      {props.groups.map((group) => renderGroup(group))}
     </div>
+  );
+}
+
+function renderGroup(group: BillBoardGroup) {
+  return group.entries.map((entry) => renderEntry(entry));
+}
+
+function renderEntry(entry: BillBoardEntry) {
+  return (
+    <>
+      <p>{entry.title}</p>
+      <p>{entry.blurb}</p>
+    </>
   );
 }

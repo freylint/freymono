@@ -1,7 +1,4 @@
-import BillBoard, {
-  BillBoardEntry,
-  BillBoardGroup,
-} from "../shared/billboard/billboard";
+import BillBoard, { BillBoardEntry, BillBoardGroup } from "@/shared/billboard";
 
 export default function SplashPage() {
   const marketingBlurb = "RAPID, ROBUST, ACCESSIBLE, ATTENTIVE";

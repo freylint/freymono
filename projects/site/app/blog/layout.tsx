@@ -1,10 +1,9 @@
 import HeaderBar from "@/shared/headerbar";
-import SplashPage from "@/components/splashpage";
 import "tailwindcss/tailwind.css";
 
 export const metadata = {
-  title: "Freyground",
-  description: "Personal blog and project page.",
+  title: "Freyground: Blog",
+  description: "Tech blog for humans",
 };
 
 export default function RootLayout({
@@ -26,7 +25,6 @@ export default function RootLayout({
       </head>
       <body className="font-sans break-words bg-slate-900 white-space:pre-line">
         <HeaderBar />
-        <SplashPage />
         {children}
       </body>
     </html>

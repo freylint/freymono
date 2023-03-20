@@ -1,4 +1,4 @@
-const srcs = "./src/**/*.{js,ts,jsx,tsx,mdx}";
+const srcs = "./app/**/*.{js,ts,jsx,tsx,mdx}";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
